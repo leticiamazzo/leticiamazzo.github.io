@@ -1,108 +1,83 @@
-*{
-    font-family: 'Flamenco', cursive;
+:root {
+    --color-black-first: #000000;
+    --color-black-second: #3A4042;
+    --color-black-third: #828282;
 
+    /* --color-first: #F25A70; */
+    --color-first: #E0777D;
+
+    /* --color-second: #7C5E99; */
+    --color-second: #FFF7F8;
+
+    /* --color-third: #FFFFFF; */
+    --color-third: #3D405B;
+
+    /* --color-fourth: #4C5B84; */
+    --color-fourth: #58A4B0;
+
+    --color-fifth: #F4AC45;
+
+    --color-error: #BA1F33;
+    --color-success: #62C370;
+    --color-warning: #CEB02A;
 }
 
- /* ul li{
-    display: flex;
-    justify-content: space-between;
-    display: inline-block;
-    list-style: none;
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-nav a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-
-}  */
-
-.topbar ul li{
-    display: inline;
-    list-style: none;
+body {
+    margin: 0;
+    
 }
 
-nav.topbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    width: 100%;
+header {
+    background: var(--color-second);
+    border-bottom: 3px solid var(--color-first);
+    padding: 0 20px;
 }
 
-nav.topbar a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    padding: 0 10px;
-}
+/* pensar em mobile first */
+/*  deveria ser o media query */
+    nav {
+        height: 70px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    .rabbit {
+        width: 55px;
+    }
 
-/* HEADER */
-header{
-    background: url(../img/bg-banner.png);
-    background-size: cover;
-    min-height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
-header div h1{
-    color: white;
-    text-transform: uppercase;
-}
+    a {
+        text-decoration: none;
+        padding-right: 20px;
+        color: var(--color-third);
+    }
 
-header div p{
-    color: white;
-}
+    #button {
+        background: var(--color-second);
+        width: 170px;
+        height: 60px;
+        padding: 10px;
+        border-radius: 5px;
+        /* border: 1px solid var(--color-black-first);
+        box-shadow: 5px 5px 0 var(--color-black-first); */
+        border: 3px solid var(--color-fourth);
+        box-shadow: 5px 5px 0 var(--color-fourth);
+        color: var(--color-third);
+        font-weight: 600;
+        transition: transform 100ms linear, opacity 200ms ease-in-out;
+    }
 
-.btn-experimentar{
-    display: block;
-    background-color: rgba(247, 232, 29, 0.918);
-    border-radius: 10px;
-    padding: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(231, 170, 39);
-    margin-top: 20px;
-    max-width: 200px;
-    margin: 0 auto;
-}
-
-/* SOBRE */
-.sobre > div{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-.desc-sobre{
-    max-width: 40%;
-    margin-left: 30px;
-}
-
-
-/* PASSO-A-PASSO */
-.passo-a-passo h2{
-    display: block;
-    text-align: center;
-}
-
-.passo-a-passo div{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-}
-
-.passo-a-passo div > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* SERVICOS */
-
+    #button:hover {
+        transform: scale(1.05);
+    }

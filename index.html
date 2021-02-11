@@ -1,197 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Gruppe Viagens Page</title>
-        <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    
-    <body>
-        <nav class="topbar">
-            <div class="brand">
-                <a href="#"><img src="img/logo.png" alt="Logo da empresa Gruppe Viagens"></a>
-            </div>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Letícia Mazzo - Portfólio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img class="rabbit" src="./assets/rabbit.svg" alt="Coelho fofo">
+            </a>
 
-            <div>
-                <ul>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Como funciona</a></li>
-                    <li><a href="#">Roteiros e Consultorias</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Quero agora</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <a href="#skills">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li>
+                    <a href="#carrer">Carreira</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+                <li>
+                    <a id="button" href="">Download CV</a>
+                </li>
+            </ul>            
         </nav>
-
-        <header>
-            <div>
-                <h1>a viagem dos seus sonhos começa aqui!</h1>
-                <p>Escolhemos os melhores destinos para você viajar!
-                <br>
-                Já sabe para onde vai? Nós também criamos roteiros personalizados, selecionando
-                <br>
-                os pontos turísticos e restaurantes mais apropriados para você.</p>
-                <a href="#" class="btn-experimentar">experimentar agora</a>
-            </div>
-        </header>
-        
-        <main>
-            <section class="sobre">
-                <div>
-                    <img src="img/sobre-01.png" alt="Símbolo de locallização em cima do mundo">
-
-                    <div class="desc-sobre">
-                        <h2>O que é o Gruppe?</h2>
-                        <p>Gruppe é um serviço de consultoria para todos os tipos de viajantes. Somos especializados em entender nossos clientes e montar o roteiro levando em consideração o seu perfil, quem vai com você, seu orçamento e outras informações relevantes!</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="passo-a-passo">
-                <h2>Entendi! E como funciona?</h2>   
-                
-                <div>
-                    <div>
-                        <img src="img/passo01.png" alt="Pessoa nadando">
-                        <p><strong>Você nos diz quem é!</strong>Se você gosta de aventura, se está viajando à trabalho, quanto tem para gastar etc.</p>
-                    </div>
-                    
-                    <div>
-                        <img src="img/passo-02.png" alt="Ponto de localização">
-                        <p><strong>Montamos o melhor roteiro</strong>que se encaixa com as suas especificações.
-                        </p>
-                    </div>
-
-                    <div>
-                        <img src="img/passo-03.png" alt="Mala de viagem">
-                        <p><strong>Aproveite sua viagem</strong>ao máximo, sem perder horas montando um roteiro!</p>
-                    </div>
-            
-            <section class="servicos">
-                <h2>Nossos Serviços</h2>
-
-                <div>
-                    <div>
-                        <h3>Consultoria</h3>
-                        <img src="img/servicos-consultoria.png" alt="Ponto de localização">
-                        <p>Não sabe para onde viajar? A consultoria visa selecionar os melhores destinos do Brasil e do mundo para a sua próxima viagem.</p>
-                        <a href="#">Saber mais</a>
-                    </div>
-
-                    <div>
-                        <h3>Roteiro</h3>
-                        <img src="img/servicos-roteiros.png" alt="Malinha">
-                        <p>Sua viagem está chegando, mas não sabe o que visitar e onde comer? Nós temos uma equipe de consultores apaixonada por viagem. Sabemos como montar o roteiro para cada perfil de viajante.</p>
-                        <a href="#">Saber mais</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="curiosidades">
-                <h2>Você sabia que...</h2>
-
-                <div>
-                    <p><span>80%</span>É o que você economiza quando planeja uma viagem de antemão</p>
-                </div>
-
-                <div>
-                    <p><span>50+</span>Localidades diferentes nossos consultores conhecem no mundo inteiro</p>
-                </div>
-
-                <div>
-                    <p><span>1000+</span>Brasileiros viajaram no ano de 2016</p>
-                </div>
-            </section>
-
-            <section class="contato">
-                <h2>Alguma dúvida?</h2>
-                <h2>Fale com a gente!</h2>
-
-                <form action="enviar">
-                    <div>
-                        <label for="name">Nome</label>
-                        <input type="text" name="name">
-                    </div>
-
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input type="text" name="email">
-                    </div>
-
-                    <div>
-                        <label for="assunto">Assunto</label>
-                        <input type="text" name="assunto">
-                    </div>
-
-                    <div>
-                        <textarea name="" id="" rows="20"></textarea>
-                    </div>
-
-                    <input type="submit" name="enviar">
-                </form>
-            </section>
-
-            <section class="newsletter">
-                <h2>Fique ligado nas novidades do Gruppe!</h2>
-
-                <div>
-                    <form action="comecar-agora">
-                        <label for="insira-email">Insira seu email</label>
-                        <input type="submit" name="comecar agora">
-                    </form>
-                </div>
-            </section>
-
-            <footer>
-                <div>
-                    <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Como funciona</a></li>
-                        <li><a href="#">Roteiros</a></li>
-                        <li><a href="#">Consultoria</a></li>
-                        <li><a href="#">Contato</a></li>               
-                    </ul>
-                </div>
-
-                <div>
-                    <img src="img/logo-footer.png" alt="Logo da empresa">
-                    <p>Sharing Experiences</p>
-                    <a href="mailto:contato@gruppe.com"></a>
-                    <p>© Copyright 2017. Gruppe Viagens</p>
-                </div>
-
-                <div>
-                    <p>siga-nos nas redes sociais:</p>
-
-                    <div>
-                        <img src="img/fb-icon.png" alt="Icone do Facebook">
-                        <img src="img/yt-icon.png" alt="Icone do Youtube">
-                    </div>
-                </div>
-
-
-            </footer>
-
-
-
-
-
-
-
-                </div>
-
-            </section>
-
-
-
-
-        </main>
-       
-
-
-
-
-        
-    </body>
+    </header>
+    
+    <!-- <p>Desenvolvedora <em lang="en">front-end</em></p> -->
+</body>
 </html>
