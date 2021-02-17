@@ -7,35 +7,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components/button.css">
+    <link rel="stylesheet" href="./css/components/font.css">
     <title>Letícia Mazzo - Portfólio</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">
-                <img class="rabbit" src="./assets/rabbit.svg" alt="Coelho fofo">
-            </a>
-
+        <a href="#">
+            <img class="rabbit" src="./assets/rabbit.svg" alt="Coelho fofo">
+        </a>
+        
+        <nav class="menu-mobile">
+            <img class="menu" src="./assets/menu.svg" alt="Menu">
+        </nav>
+        
+        <nav class="menu-desktop">
             <ul>
-                <li>
-                    <a href="#skills">Habilidades</a>
-                </li>
-                <li>
-                    <a href="#projects">Projetos</a>
-                </li>
-                <li>
-                    <a href="#carrer">Carreira</a>
-                </li>
-                <li>
-                    <a href="#contact">Contato</a>
-                </li>
-                <li>
-                    <a id="button" href="">Download CV</a>
-                </li>
-            </ul>            
+                <li><a class="sections" href="#about-content">Sobre</a></li>
+                <li><a class="sections" href="#skills-content">Habilidades</a></li>
+                <li><a class="sections" href="#projects-content">Projetos</a></li>
+                <li><a class="sections" href="#carrer-content">Carreira</a></li>
+                <li><a class="sections" href="#contact-content">Contato</a></li>
+                <li><a class="button" href="">Download CV</a></li>
+            </ul>
         </nav>
     </header>
     
-    <!-- <p>Desenvolvedora <em lang="en">front-end</em></p> -->
+    <main>
+        <section id="about-content" class="about">
+            <div class="about-1">
+                <h2 class="title">Letícia Mazzo</h2>
+                <h1>Desenvolvedora <em lang="en">front-end</em></h1>
+                <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam rem quis neque voluptatibus, dolorum molestias incidunt alias culpa placeat deserunt perferendis nisi voluptatum tempore nam debitis, obcaecati quisquam temporibus? Atque!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam rem quis neque voluptatibus, dolorum molestias incidunt alias culpa placeat deserunt perferendis nisi voluptatum tempore nam debitis, obcaecati quisquam temporibus? Atque!</article>
+    
+                <a class="button" href="">Contato</a>
+                <a class="button" href="">Download CV</a>
+            </div>
+            
+            <div class="about-2">
+                <img class="photo" src="./assets/leticia.jpg" alt="Foto de Letícia, uma mulher branca, sorrindo, com cabelo castanho claro, solto, na altura dos ombros. Letícia veste um casaco com gola marrom, lenço roxo enrolado no pescoço. Letícia está na frente de uma parede com formas assimétricas coloridas pintadas de roxo, rosa, branco, amarelo e azul.">
+    
+                <ul class="social-media">
+                    <li><img class="media-icon" src="./assets/github.svg" alt="Github"></li>
+                    <li><img class="media-icon" src="./assets/linkedin.svg" alt="Linkedin"></li>
+                    <li><img class="media-icon" src="./assets/email.svg" alt="Email"></li>
+                </ul>
+            </div>
+        </section>
+        
+    
+        <section class="skills">
+            <h3 class="title">Habilidades</h3>
+        </section>
+    </main>
 </body>
 </html>
