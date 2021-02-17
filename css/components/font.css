@@ -1,4 +1,16 @@
-.title {
+.main-title {
     color: var(--color-first);
     font-size: var(--font-title);
+    text-align: center;
+}
+
+.sub-title {
+    color: var(--color-fourth);
+    font-size: var(--font-medium);
+    text-align: center;
+}
+
+.text {
+    color: var(--color-third);
+    font-size: --font-text;
 }

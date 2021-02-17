@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/components/button.css">
     <link rel="stylesheet" href="./css/components/font.css">
+    <link rel="stylesheet" href="./css/components/section.css">
+    <link rel="icon" href="./assets/code.svg">
     <title>Letícia Mazzo - Portfólio</title>
 </head>
 <body>
     <header>
         <a href="#">
             <img class="rabbit" src="./assets/rabbit.svg" alt="Coelho fofo">
+            <!-- <p>LM</p> -->
         </a>
         
         <nav class="menu-mobile">
@@ -23,21 +26,21 @@
         
         <nav class="menu-desktop">
             <ul>
-                <li><a class="sections" href="#about-content">Sobre</a></li>
-                <li><a class="sections" href="#skills-content">Habilidades</a></li>
-                <li><a class="sections" href="#projects-content">Projetos</a></li>
-                <li><a class="sections" href="#carrer-content">Carreira</a></li>
-                <li><a class="sections" href="#contact-content">Contato</a></li>
+                <li><a class="navigation-item" href="#about-content">Sobre</a></li>
+                <li><a class="navigation-item" href="#skills-content">Habilidades</a></li>
+                <li><a class="navigation-item" href="#projects-content">Projetos</a></li>
+                <li><a class="navigation-item" href="#carreer-content">Carreira</a></li>
+                <li><a class="navigation-item" href="#contact-content">Contato</a></li>
                 <li><a class="button" href="">Download CV</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section id="about-content" class="about">
+        <section id="about-content" class="about section">
             <div class="about-1">
-                <h2 class="title">Letícia Mazzo</h2>
-                <h1>Desenvolvedora <em lang="en">front-end</em></h1>
+                <h2 class="main-title">Letícia Mazzo</h2>
+                <h1 class="sub-title">Desenvolvedora <em lang="en">front-end</em></h1>
                 <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam rem quis neque voluptatibus, dolorum molestias incidunt alias culpa placeat deserunt perferendis nisi voluptatum tempore nam debitis, obcaecati quisquam temporibus? Atque!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam rem quis neque voluptatibus, dolorum molestias incidunt alias culpa placeat deserunt perferendis nisi voluptatum tempore nam debitis, obcaecati quisquam temporibus? Atque!</article>
     
                 <a class="button" href="">Contato</a>
@@ -48,16 +51,106 @@
                 <img class="photo" src="./assets/leticia.jpg" alt="Foto de Letícia, uma mulher branca, sorrindo, com cabelo castanho claro, solto, na altura dos ombros. Letícia veste um casaco com gola marrom, lenço roxo enrolado no pescoço. Letícia está na frente de uma parede com formas assimétricas coloridas pintadas de roxo, rosa, branco, amarelo e azul.">
     
                 <ul class="social-media">
-                    <li><img class="media-icon" src="./assets/github.svg" alt="Github"></li>
-                    <li><img class="media-icon" src="./assets/linkedin.svg" alt="Linkedin"></li>
-                    <li><img class="media-icon" src="./assets/email.svg" alt="Email"></li>
+                    <li>
+                        <a href="https://github.com/leticiamazzo" target="_blank">
+                            <img class="media-icon" src="./assets/github.svg" alt="Github">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/leticia-mazzo" target="_blank">
+                            <img class="media-icon" src="./assets/linkedin.svg" alt="Linkedin">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:leticiamazzo@gmail.com" target="_blank">
+                            <img class="media-icon" src="./assets/email.svg" alt="Email">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
         
     
-        <section class="skills">
-            <h3 class="title">Habilidades</h3>
+        <section id="skills-content" class="skills section">
+            <h3 class="main-title">Habilidades</h3>
+
+            <!-- cl (description list): descrever uma pessoa, um plano de assinaturas. fihos diretos possíveis: description title e desciption detail -->
+            <div class="skills-wrapper">
+                <div>
+                    <dl>
+                        <dt>html</dt>
+                        <dd><progress max="100" value="80"></progress></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt>css</dt>
+                        <dd><progress max="100" value="80"></progress></dd>
+                    </dl>
+        
+                    <dl>
+                        <dt>sass</dt>
+                        <dd><progress max="100" value="80"></progress></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt>javascript</dt>
+                        <dd><progress max="100" value="60"></progress></dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <dl>
+                        <dt>angular</dt>
+                        <dd><progress max="100" value="40"></progress></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt>react</dt>
+                        <dd><progress max="100" value="20"></progress></dd>
+                    </dl>
+        
+                    <dl>
+                        <dt>git</dt>
+                        <dd><progress max="100" value="80"></progress></dd>
+                    </dl>
+        
+                    <dl>
+                        <dt>github</dt>
+                        <dd><progress max="100" value="80"></progress></dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+    
+        <section id="projects-content" class="projects section">
+            <h3 class="main-title">Projetos</h3>
+
+            <div class="projects-wrapper">
+                <!-- figure: envolve grupos de imagens -->
+                <figure>
+                    <img class="projects-img" src="https://media3.giphy.com/media/H4DjXQXamtTiIuCcRU/giphy.gif"
+                    alt="Gatinho surpresa">
+    
+                    <figcaption>Site teste</figcaption>            
+                </figure>
+    
+                <figure>
+                    <img src="https://media3.giphy.com/media/H4DjXQXamtTiIuCcRU/giphy.gif"
+                    alt="Gatinho surpresa">
+    
+                    <figcaption>Site teste</figcaption>            
+                </figure>
+            </div>
+        </section>
+
+
+        <section id="carreer-content">
+            <h3 class="main-title">Carreira</h3>
+
+
         </section>
     </main>
 </body>

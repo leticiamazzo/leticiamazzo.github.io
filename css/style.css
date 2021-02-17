@@ -35,6 +35,9 @@ body {
     background: var(--color-second);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+.section {
+    padding: 50px;
+}
 
 header {
     display: flex;
@@ -85,7 +88,7 @@ header {
         margin-right: 30px;
     }
 
-    .sections::before {
+    .navigation-item::before {
         content: "";
         background: var(--color-fourth);
         width: 10px;
@@ -93,7 +96,7 @@ header {
         margin-right: 10px;
     }
 
-    .sections:hover {
+    .navigation-item:hover {
         text-decoration: underline;
     }
 
@@ -142,7 +145,7 @@ header {
 .about .social-media {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style: none;
     padding: 0;
 }
@@ -150,6 +153,7 @@ header {
 .about .media-icon {
     width: 30px;
     cursor: pointer;
+    padding: 0 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -159,11 +163,127 @@ header {
     }
 
     .about .about-1 {
+        width: 50%;
         padding-right: 20px;
     }
 
     .about .about-2 {
+        width: 50%;
         padding-left: 20px;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Leticia - skills */
+.skills dl {
+    margin-bottom: 30px;
+}
+
+.skills dt {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.skills dd {
+    margin: 0;
+}
+
+.skills .skills-wrapper {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.skills progress {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px; 
+    border: 1px solid var(--color-third);
+
+}
+.skills progress::-webkit-progress-bar {
+    background-color: var(--color-second);
+    border-radius: 5px;
+}
+.skills progress::-webkit-progress-value {
+    background-color: var(--color-fourth);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .skills .skills-wrapper {
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Leticia - projects */
+.projects .projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects figure {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+}
+
+.projects .projects-img {
+    max-width: 220px;
+    max-height: 200px;
+}
+
+.projects figcaption {
+    background-color: var(--color-second);
+    color: var(--color-third);
+    padding: 3px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .projects .projects-wrapper {
+        flex-direction: row;
+    }
+}
