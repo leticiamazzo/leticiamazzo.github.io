@@ -29,84 +29,114 @@
     --font-text: 1.1rem;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
     background: var(--color-second);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+
+ul, ol, li {
+    list-style: none;
+}
+
 .section {
     padding: 50px;
 }
 
+
+
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border-bottom: 5px solid var(--color-first);
     padding: 10px 20px;
 }
 
-.rabbit, .menu {
-    width: 50px;
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .wrap-menu-mobile {
+    display: block;
+}
+
+header .wrap-menu-web {
+    display: none;
+}
+
+header .code-icon, .open-icon, .close-icon {
+    width: 40px;
     padding: 15px 10px;
     cursor: pointer;
 }
 
-.menu {
-    width: 40px;
+header .list-mobile-menu {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    right: 0;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    transform: translateX(100%);
+    transition: transform 200ms linear;
 }
 
-.menu-desktop {
-    display: none;
+header .open-mobile-menu {
+    transform: translateX(0);
 }
+
+header .close-icon {
+    padding: 25px 30px;
+}
+
+header .navigation-item {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-third);
+    font-size: var(--font-medium);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+
+header .navigation-item:hover {
+    text-decoration: underline;
+}
+
+
 
 
 @media only screen and (min-width: 768px) {
-/* mobile-menu */
-    .menu-mobile {
+    header .wrap-menu-mobile {
         display: none;
     }
 
-    .menu-desktop {
+    header .wrap-menu-web {
         display: flex;
+        justify-content: space-between;
     }
 
-    ul {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        list-style: none;
-    }
-
-    a {
+    header .list-web-menu {
         display: inline-flex;
         align-items: center;
         color: var(--color-third);
         font-size: var(--font-medium);
         text-decoration: none;
-        margin-right: 30px;
     }
 
-    .navigation-item::before {
+    header .navigation-item::before {
         content: "";
         background: var(--color-fourth);
         width: 10px;
         height: 10px;
         margin-right: 10px;
     }
-
-    .navigation-item:hover {
-        text-decoration: underline;
-    }
-
 }
-
-
-
-
-
-
 
 
 
@@ -146,7 +176,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    list-style: none;
     padding: 0;
 }
 

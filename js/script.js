@@ -1,8 +1,11 @@
-var mainListDiv = document.getElementById("mainListDiv"),
-    mediaButton = document.getElementById("mediaButton");
+const $menu = document.querySelector('.list-mobile-menu');
+const $btnMenu = document.querySelector('.menu-button');
+const $closeMenu = document.querySelector('.close-mobile-menu');
 
-mediaButton.onclick = function () { 
-    mainListDiv.classList.toggle("show_list");
-    mediaButton.classList.toggle("active");
-    
-};
+$btnMenu.addEventListener('click', function(){
+    $menu.classList.add('open-mobile-menu')
+})
+
+$closeMenu.addEventListener('click', function(){
+    $menu.classList.remove('open-mobile-menu')
+})
