@@ -207,7 +207,6 @@ header {
 }
 
 .skills .skills-wrapper {
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -235,6 +234,7 @@ header {
         flex-direction: row;
     }
 }
+
 
 
 
@@ -286,4 +286,78 @@ header {
     .projects .projects-wrapper {
         flex-direction: row;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Leticia - carreer */
+.carreer {
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .carreer {
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Leticia - footer */
+footer {
+    width: 100%;
+    text-align: right;
+    border-top: 2px solid var(--color-first);
+}
+
+footer p {
+    padding-right: 50px;
+
+}
+
+footer .heart {
+    width: 20px;
+    vertical-align: bottom;
 }
