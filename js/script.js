@@ -1,11 +1,19 @@
-const $menu = document.querySelector('.list-mobile-menu');
-const $btnMenu = document.querySelector('.menu-button');
-const $closeMenu = document.querySelector('.close-mobile-menu');
+let show = true;
 
-$btnMenu.addEventListener('click', function(){
-    $menu.classList.add('open-mobile-menu')
-})
+const body = document.querySelector("body")
+const menuSection = document.querySelector(".menu-section")
+const menuToggle = document.querySelector(".menu-toggle")
+const menuList = document.querySelector("nav")
+const menuIcon = document.querySelector(".menu-icon")
 
-$closeMenu.addEventListener('click', function(){
-    $menu.classList.remove('open-mobile-menu')
+menuToggle.addEventListener("click", () => {
+    // não entra no else
+    // document.body.style.overflow = show ? "hidden" : "inicial"
+
+    body.classList.toggle("blocks-scroll-bar", show)
+    menuSection.classList.toggle("on", show)
+    menuList.classList.toggle("show-nav", show)
+    menuIcon.classList.toggle("close-icon", show)
+    
+    show = !show
 })
