@@ -149,13 +149,70 @@
         </section>
 
 
-        <section id="carreer-content" class="carreer section">
+        <section id="carreer-content" class="carreer section-vertical">
             <h3 class="main-title">Carreira</h3>
 
-            <p>
+            <section class="main-carousel">
+                <button class="button-arrow -left"><span class="content">Avançar</span></button>  
+                
+                <div class="items">
+                    <div class="elements">
+                        <figure class="node-card -clean">
+                            <figcaption class="title">2020</figcaption>
+            
+                            <div class="logo">
+                                <img src="./assets/rabbit.svg" alt="Logo da empresa X">
+                            </div>
+                        </figure>
+            
+                        <figure class="node-card -first">
+                            <figcaption class="title">2019</figcaption>
+            
+                            <div class="logo">
+                                <img src="./assets/website.svg" alt="Logo da empresa X">
+                            </div>
+                        </figure>
+            
+                        <figure class="node-card">
+                            <figcaption class="title">2018</figcaption>
+            
+                            <div class="logo">
+                                <img src="./assets/smile.svg" alt="Logo da empresa X">
+                            </div>
+                        </figure>    
+                    </div>
+                </div>
+
+                <button class="button-arrow -right"><span class="content">Voltar</span></button>
+            </section>
+
+
+            <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, eligendi delectus. Sint amet dolores, ipsam laboriosam vero, ipsum dolore maxime eveniet modi quam natus eius voluptas voluptatum, itaque eum illum!
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, eligendi delectus. Sint amet dolores, ipsam laboriosam vero, ipsum dolore maxime eveniet modi quam natus eius voluptas voluptatum, itaque eum illum!
             </p>
         </section>
+
+
+
+        <form id="contact-content"  class="main-form section" action="" method="post">
+            <legend class="main-title">Contato</legend>
+
+            <label class="main-label" for="name">Nome</label>
+            <input class="main-input text" type="text" name="Nome" id="name" required>
+            
+            <label class="main-label" for="email">E-mail</label>
+            <input class="main-input text" type="email" name="E-mail" id="email" required>
+            
+            
+            <label class="main-label" for="message">Mensagem</label>
+            <!-- -textarea é uma variação da classe main-input -->
+            <textarea class="main-input -textarea text" name="Mensagem" id="message" required placeholder="Escreva sua mensagem! :)"></textarea>
+
+            <div class="send">
+                <button class="button" type="submit">Enviar</button>
+            </div>
+        </form>
     </main>
 
     <footer>
